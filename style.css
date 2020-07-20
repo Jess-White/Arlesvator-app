@@ -26,6 +26,13 @@ body{
   max-height: 80%;
 }
 
+.top-body-text {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+  color: #2c03ff;
+  padding-top: 15%;
+}
+
 .sliding-doors{
   opacity: 1.0;
   width: 100vw;
@@ -152,13 +159,6 @@ body{
   color: #1e68ff;
   box-shadow: 5px 20px 30px #aeffdf,
               inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
-}
-
-.top-body-text {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 45px;
-  color: #2c03ff;
-  padding-top: 15%;
 }
 
 .navbar-brand-top:hover {
