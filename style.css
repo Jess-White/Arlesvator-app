@@ -1,0 +1,370 @@
+.App {
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/*Sliding Doors:*/
+
+body{
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/yellow-rainbow-grunge-texture-2-1560x2080.jpg');
+
+}
+
+.header {
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/mixed-watercolor-paint-texture-5-1560x2128.jpg');
+  background-size: cover;
+
+}
+
+.header-buttons {
+  left: 50%;
+  line-height: 55px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.sliding-doors{
+  opacity: 1.0;
+  width: 100vw;
+  height: 80vh;
+  max-width: 50%;
+  position: relative;
+  margin-top: 15%;
+  left: 65%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: -200px 0;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
+  border: 30px groove #f2be00;
+  outline: 100px solid #f2be00; 
+  outline-offset: 20px;
+}
+
+.sliding-doors:before,
+.sliding-doors:after{
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 0;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-transition: 4000ms;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.sliding-doors:before {
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/blue-abstract-microscopic-texture-6-1560x1053.jpg');
+  background-size: cover;
+}
+  
+.sliding-doors:after {
+    background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/blue-abstract-microscopic-texture-6-1560x1053.jpg');
+  background-size: cover;
+
+  background-position: -40vw 0;
+}
+
+.sliding-doors:hover:before{
+  left: -40vw;
+  transition: all 3s ease-in-out;
+}
+
+.sliding-doors:hover:after{
+  left: 40vw;
+  transition: all 3s ease-in-out;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  height: 100vh;
+  opacity: 0.8;
+  position: relative;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  width: 120px;
+  height: 650px;
+  outline: 50px solid #ffcb0d;
+  outline-offset: -10px;
+  text-align: center;
+  padding-top: 5%;
+  margin-top: 95%;
+  right: 90%;
+}
+
+.navbar-brand {
+  background-color: #002080;
+  opacity: 1.0;
+  color: #9cdeff;
+  margin: 18px;
+  width: 65px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  /*line-height: 25px;*/
+/*  border-radius: 100%;*/
+  box-shadow: 0px 3px 3px #aaa, inset 0px 2px 3px #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 30px;
+  display: inline-block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+
+.navbar-brand-top {
+  opacity: .7;
+  margin: 10px;
+  width: 180px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  left: 80%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 30px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  cursor: pointer;
+  text-align: right;
+  padding: 10px;
+
+  background: #ffcb0d;
+  color: #1e68ff;
+  box-shadow: 5px 20px 30px #aeffdf,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+}
+
+.top-body-text {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 45px;
+  color: #2c03ff;
+  padding-top: 15%;
+}
+
+.navbar-brand-top:hover {
+  text-decoration: none;
+
+  color: #14ffa1;
+  background: #168a45;
+  box-shadow: 5px 20px 30px #14ffa1, inset 5px 5px 5px 3px #0b4824;
+}
+
+.navbar-brand-slidy {
+  background-color: #002080;
+  color: #2c03ff;
+  opacity: 1;
+  margin: 5px;
+  padding: 15px;
+  padding-bottom: 30px;
+  width: 67px;
+  height: 187px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 29px;
+  border-radius: 0%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 40px;
+  
+  cursor: pointer;
+  text-align: center;
+  border-top: 3px solid #1d6aff;
+  border-right: 3px solid #009458;
+  box-shadow: 5px 30px 40px #1d6aff, inset 5px 5px 5px 3px #1d6aff;
+}
+
+.navbar-brand-slidy.indicate-floor {
+  text-decoration: none;
+  opacity: 1.0;
+  color: #83d6ff;
+  background: #2c03ff;
+  box-shadow: 5px 20px 30px #aeffdf,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+  transition: all 2.0s ease;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #83d6ff;
+  background: #032fff;
+  box-shadow: 0px 2px 3px #bfff45,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+}
+
+.navbar-brand:before {
+  content: "";
+  display: block;
+  background: #1c79ff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+/*  border-radius: 100%;*/
+  box-shadow: inset 0px 8px 28px #ddd;
+  transition: all 0.5s ease;
+  border-color: hsl(180, 100%, 50%);
+  color: hsl(180, 100%, 50%);
+  text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
+  box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
+              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);
+}
+
+.section-middle {
+  margin-top: 500px;
+}
+
+.section-elevator {
+  text-align: left;
+}
+
+.section-buttons {
+  text-align: right;
+}
+
+.modal-blurb {
+
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  color: "white";
+}
+.popup .close:hover {
+  color: "white";
+}
+
+.slidy-holder {
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.slidy-holder-panel {
+  opacity: 1.0;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/mixed-watercolor-paint-texture-12.jpg');
+}
+
+.logo-image {
+  width: 50%;
+  left: 10%;
+}
+
+.about-element {
+  display: none;
+  padding-top: 10%;
+  padding-bottom: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.about-para {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/yellow-rainbow-grunge-texture-2-1560x2080.jpg');
+  background-size: cover;
+}
+
+.about-header {
+  color: #0074e7;
+  font-size: 50px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.about-text {
+  color: #007e40;
+  font-size: 30px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.jumbotron-about {
+  background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/mixed-watercolor-paint-texture-5-1560x2128.jpg');
+  background-size: cover;
+}
+
+.navbar-brand-about {
+  opacity: .7;
+  margin: 5%;
+  width: 160px;
+  height: 80px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  left: 60%;
+  border-radius: 10%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 30px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+
+  background: #ffcb0d;
+  color: #0b4824;
+  box-shadow: 5px 20px 30px #aeffdf,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+}
+
+.navbar-brand-about:hover {
+  text-decoration: none;
+
+  color: #14ffa1;
+  background: #168a45;
+  box-shadow: 5px 20px 30px #14ffa1, inset 5px 5px 5px 3px #0b4824;
+}
+

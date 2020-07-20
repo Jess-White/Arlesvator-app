@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arlesvator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    
+    <div>
+      <div class="jumbotron header" background-size="cover">
+        
+        <div class="row">
+          <div class="col-sm-8">
+          <img class="logo-image" src="Arles_logo2.png" />
+          </div>
+
+          <span class="col-sm-4">
+          <div class="row header-buttons">
+            <a class="row navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i class="fa fa-2x fa-github-square" aria-hidden="true"></i></a>
+          </div>
+          <div class="row header-buttons">
+            <a class="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
+          </div>
+          <div id="aboutSection" class="row header-buttons">
+          <div onClick="showAbout()" style={customStyles} trigger="button" class="navbar-brand-top"><h1>About</h1>
+          </div>
+          </div>
+          <p class="top-body-text">A Van Gogh-Themed Virtual Elevator</p>
+          <!-- <div class="row header-buttons">
+            <a class="navbar-brand-top" href=""><h1>raw</h1></a>
+          </div> -->
+          <!-- <div class="row header-buttons">
+            <a class="navbar-brand-top" href="https://apodapi.herokuapp.com"><h1>Insp</h1></a>
+          </div> -->
+          </span>
+        </div>
+      </div>
+      
+      <!-- Elevator element needs to start here -->
+    <div id="elevator-element"> 
+
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-9">
+              <span class="slidyBar">
+                <span class="slidy-holder-panel">
+                  <span class="slidy-holder">
+                  <span id="slidy-basement" class="navbar-brand-slidy">B</span>
+                  <span id="slidy-lobby" class="navbar-brand-slidy">L</span>
+                  <span id="1" class="navbar-brand-slidy">1</span>
+                  <span id="2" class="navbar-brand-slidy">2</span>
+                  <span id="3" class="navbar-brand-slidy">3</span>
+                  <span id="4" class="navbar-brand-slidy">4</span>
+                  <span id="5" class="navbar-brand-slidy">5</span>
+                  <span id="6" class="navbar-brand-slidy">6</span>
+                  <span id="7" class="navbar-brand-slidy">7</span>
+                  <span id="8" class="navbar-brand-slidy">8</span>
+                  <span id="9" class="navbar-brand-slidy">9</span>
+                  <span id="10" class="navbar-brand-slidy">10</span>
+                  <span id="slidy-penthouse" class="navbar-brand-slidy">P</span>
+                  <span id="slidy-rooftop" class="navbar-brand-slidy">R</span>
+                  </span>
+                </span>
+              </span>
+          </div>
+
+      <div>
+    <!-- "Elevator Door" component -->
+          <div class="row elevator-door"> 
+              <div class="col-sm-9">
+                <div class="row">
+                  <div class="sliding-doors" id="background-painting"></div>
+                
+                <div class="nav-bar col-sm-3">
+                  <nav class="vertical-nav">
+                       <div> 
+                          <nav-link onClick="changeFloor('P')" class="navbar-brand">P</nav-link>
+                          <nav-link onClick="changeFloor('R')" class="navbar-brand">R</nav-link>
+
+                          <nav-link onClick="changeFloor(9)" class="navbar-brand">9</nav-link>
+                          <nav-link onClick="changeFloor(10)" class="navbar-brand">10</nav-link>
+                          <nav-link onClick="changeFloor(7)" class="navbar-brand">7</nav-link>
+                          <nav-link onClick="changeFloor(8)" class="navbar-brand">8</nav-link>
+                          <nav-link onClick="changeFloor(5)" class="navbar-brand">5</nav-link>
+                          <nav-link onClick="changeFloor(6)" class="navbar-brand">6</nav-link>
+                          <nav-link onClick="changeFloor(3)" class="navbar-brand">3</nav-link>
+                          <nav-link onClick="changeFloor(4)" class="navbar-brand">4</nav-link>
+                          <nav-link onClick="changeFloor(1)" class="navbar-brand">1</nav-link>
+                          <nav-link onClick="changeFloor(2)" class="navbar-brand">2</nav-link>
+
+
+                          <nav-link onClick="changeFloor('B')" class="navbar-brand">B</nav-link>
+                          <nav-link onClick="changeFloor('L')" class="navbar-brand">L</nav-link>
+                       </div>
+                  </nav>
+                </div>
+
+              </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+    </div>
+    <!-- Elevator element needs to end here -->
+
+        <div style="display: none" id="about-element">
+          <div class="jumbotron-about" background-size="cover">
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-10">
+            <div class="row about-para">
+              
+              <div class="about-header">
+              About This App</div>
+              <div onClick="closeAbout()" style={customStyles} trigger="button" class="navbar-brand-about"><h1>Close</h1>
+              </div>
+              <div class="about-text">
+                This app is a variation on my last portfolio project, Ascension, which was conceived as an answer to the "Virtual Elevator" technical interview problem. Ascension was a React app that pulled in data from NASA's Astronomy Photo of the Day API. I wanted to practice transferring my React knowledge base back into Javascript, so I decided to build a second Virtual Elevator in "Vanilla" JS. Arlesvator is the result. The first version of the project was completed in a weekend. I'm hoping to add more functionality over time, including some animations to create a more realistic "elevator" and more information about the inspiration. 
+              </div>
+              <div class="about-header">About Vincent Van Gogh</div>
+              <div class="about-text">
+                Vincent Van Gogh is one of the most famous painters in the Western canon, and he is one of my favorite artists. I love his work for its texture and color. Van Gogh also stands out to me as a singularly prolific artist. His entire career, from the first time he picked up a stick of charcoal to his final days at Auvers-sur-Oise, lasted ten years. All of his best-known works, as well as all of the canvases that display his characteristic bright color contrasts and darting brushwork, were completed in just three years. 
+              <div class="about-header">About These Paintings</div>
+              <div class="about-text">
+                I considered giving each of the ten "floors" of this elevator a painting from each of the ten years of Van Gogh's artistic career. Ultimately, I decided that I didn't like the result - "The Potato Eaters" is so different in palette and technique from later works like "Wheat Field with Cypresses" or "View of Arles, Flowering Orchards" that they didn't belong in the same virtual exhibition. Ultimately, I decided to focus on paintings from 1888 and 1889, two of the most artistically successful years of Van Gogh's career, and the period I like best. I wanted this iteration of the "Virtual Elevator" to be as distinct from the React version as possible, and I decided that bright yellows and blues were a dramatic contrast to the Galaxy theme from Ascension.
+              </div>
+              <div class="about-header">
+              </div>
+            </div>
+            </div>
+          <div class="col-sm-1">
+          </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+    <script src="scripts.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="paintingData.js">
+
+    </script>
+    
+  </body>
+</html>
+
