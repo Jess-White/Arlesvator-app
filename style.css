@@ -176,15 +176,15 @@ body{
   margin: 5px;
   padding: 15px;
   padding-bottom: 30px;
-  width: 67px;
-  height: 187px;
+  width: 37px;
+  height: 67px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  line-height: 29px;
+  line-height: 14px;
   border-radius: 0%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   
   cursor: pointer;
   text-align: center;
