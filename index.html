@@ -40,7 +40,8 @@
       </div>
       
       <!-- Elevator element needs to start here -->
-    <div id="elevator-element"> 
+    <div id="modal-hide-element">
+    <div id="elevator-element" class="modal-hide-element"> 
 
       <div class="row">
         <div class="col-sm-1">
@@ -98,7 +99,7 @@
                           <nav-link onClick="changeFloor('B')" class="navbar-brand">B</nav-link>
                           <nav-link onClick="changeFloor('L')" class="navbar-brand">L</nav-link>
 
-                          <span id="Details" class="navbar-brand-details">Details</span>
+                          <span id="detailsButton" class="navbar-brand-details">Details</span>
                        </div>
                   </nav>
                 </div>
@@ -109,9 +110,33 @@
         </div>
     </div>
   </div>
+  </div>
+    
+    <!-- Details Modal Element -->
+    <div class="modal" id="detailsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="row modal-header-text"> 
+        <p id="modal-title" class="col-sm-9"></p>
+        <p id="modal-year" class="col-sm-3"></p>
+        </div>
+        <span class="close">close</span>
+      </div>
+      <div class="modal-body modal-text row">
+        <div class="col-sm-6">
+          <p id="modal-description"></p>
+        </div>
+        <div class="col-sm-6 modal-image" id="modal-painting"></div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+    </div>
+
     </div>
     <!-- Elevator element needs to end here -->
 
+    <!-- About Element  -->
         <div style="display: none" id="about-element">
           <div class="jumbotron-about" background-size="cover">
           <div class="col-sm-1">
