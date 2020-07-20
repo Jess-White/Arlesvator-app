@@ -77,3 +77,11 @@ function closeAbout() {
   var about = document.getElementById("about-element");
   about.style.display = "none";
 }
+
+function openDoors() {
+  (document.getElementById('background-painting').classList.add('open'))
+}
+
+function closeDoors() {
+  (document.getElementById('background-painting').classList.remove('open'))
+}

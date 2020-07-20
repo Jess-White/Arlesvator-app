@@ -91,6 +91,18 @@ body{
   transition: all 5s ease-in-out;
 }
 
+.sliding-doors.open:before{
+  left: -40vw;
+  transition-delay: 3s;
+  transition: all 5s ease-in-out;
+}
+
+.sliding-doors.open:after{
+  left: 40vw;
+  transition-delay: 3s;
+  transition: all 5s ease-in-out;
+}
+
 .vertical-nav {
   min-width: 12rem;
   height: 100vh;
@@ -169,7 +181,6 @@ body{
   bottom: -5px;
   right: -5px;
   z-index: -1;
-/*  border-radius: 100%;*/
   box-shadow: inset 0px 8px 28px #ddd;
   transition: all 0.5s ease;
   border-color: hsl(180, 100%, 50%);
