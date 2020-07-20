@@ -22,15 +22,16 @@ body{
 .header-buttons {
   left: 50%;
   line-height: 55px;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 55%;
+  max-height: 55%;
 }
 
 .top-body-text {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   color: #2c03ff;
   padding-top: 15%;
+  margin-right: %;
 }
 
 .sliding-doors{
@@ -39,8 +40,8 @@ body{
   height: 80vh;
   max-width: 50%;
   position: relative;
-  margin-top: 15%;
-  left: 65%;
+  margin-top: 10%;
+  left: 55%;
   overflow: hidden;
   background-size: cover;
   background-position: -200px 0;
@@ -80,46 +81,123 @@ body{
 
 .sliding-doors:hover:before{
   left: -40vw;
-  transition: all 3s ease-in-out;
+  transition-delay: 1s;
+  transition: all 5s ease-in-out;
 }
 
 .sliding-doors:hover:after{
   left: 40vw;
-  transition: all 3s ease-in-out;
+  transition-delay: 5s;
+  transition: all 5s ease-in-out;
 }
 
 .vertical-nav {
-  min-width: 17rem;
+  min-width: 12rem;
   height: 100vh;
   opacity: 0.8;
   position: relative;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
-  width: 120px;
-  height: 650px;
-  outline: 50px solid #ffcb0d;
+  width: 60px;
+  height: 450px;
+  outline: 25px solid #ffcb0d;
   outline-offset: -10px;
   text-align: center;
   padding-top: 5%;
   margin-top: 95%;
-  right: 90%;
+  right: 100%;
 }
 
 .navbar-brand {
   background-color: #002080;
   opacity: 1.0;
   color: #9cdeff;
-  margin: 18px;
-  width: 65px;
-  height: 50px;
+  margin: 10px;
+  width: 50px;
+  height: 25px;
   position: relative;
   text-align: center;
-  /*line-height: 25px;*/
+  line-height: 10px;
+/*  border-radius: 100%;*/
+  box-shadow: 0px 3px 3px #aaa, inset 0px 2px 3px #fff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 15px;
+  display: inline-block;
+/*  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;*/
+  
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar-brand-details {
+  background-color: #002080;
+  opacity: 1.0;
+  color: #9cdeff;
+  margin: 10px;
+  width: 130px;
+  height: 85px;
+  position: relative;
+  text-align: center;
+  line-height: 70px;
 /*  border-radius: 100%;*/
   box-shadow: 0px 3px 3px #aaa, inset 0px 2px 3px #fff;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 30px;
   display: inline-block;
+  
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar-brand-details:hover {
+  text-decoration: none;
+  color: #83d6ff;
+  background: #032fff;
+  box-shadow: 0px 2px 3px #bfff45,
+              inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
+}
+
+.navbar-brand-details:before {
+  content: "";
+  display: block;
+  background: #1c79ff;
+  border-top: 2px solid #ddd;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+/*  border-radius: 100%;*/
+  box-shadow: inset 0px 8px 28px #ddd;
+  transition: all 0.5s ease;
+  border-color: hsl(180, 100%, 50%);
+  color: hsl(180, 100%, 50%);
+  text-shadow: 0 0 10px hsla(180, 100%, 50%, 1);
+  box-shadow: 0 0 10px 5px hsla(180, 100%, 50%, 0.5),
+              inset 0 0 10px 5px hsla(180, 100%, 50%, 0.5);
+}
+
+.navbar-brand-top {
+  opacity: .7;
+  margin: 10px;
+  width: 120px;
+  height: 60px;
+  position: relative;
+  display: inline;
+  left: 80%;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -129,31 +207,7 @@ body{
   
   cursor: pointer;
   text-align: center;
-  padding: 5px;
-}
-
-.navbar-brand-top {
-  opacity: .7;
-  margin: 10px;
-  width: 180px;
-  height: 80px;
-  position: relative;
-  display: inline-block;
-  float: right;
-  left: 80%;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 30px;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  
-  cursor: pointer;
-  text-align: right;
-  padding: 10px;
+  padding: 8px;
 
   background: #ffcb0d;
   color: #1e68ff;
@@ -174,15 +228,14 @@ body{
   color: #2c03ff;
   opacity: 1;
   margin: 5px;
-  padding: 15px;
-  padding-bottom: 30px;
-  width: 40px;
+  padding: 10px;
+/*  padding-bottom: 30px;*/
+  width: 35px;
   height: 67px;
   position: relative;
   display: inline-block;
   vertical-align: middle;
   line-height: 14px;
-  border-radius: 0%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 18px;
   
@@ -271,17 +324,16 @@ body{
 }
 
 .slidy-holder {
-  padding-right: 5%;
-  padding-left: 5%;
   padding-bottom: 2%;
 }
 
 .slidy-holder-panel {
+  float: right;
   opacity: 1.0;
-  padding-bottom: 5%;
-  padding-top: 5%;
-  padding-right: 5%;
-  padding-left: 5%;
+/*  padding-bottom: 5%;
+  padding-top: 4%;*/
+  padding-right: 3%;
+  padding-left: 3%;
   background: url('https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/mixed-watercolor-paint-texture-12.jpg');
 }
 
@@ -310,17 +362,17 @@ body{
 
 .about-header {
   color: #0074e7;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-weight: bold;
   text-align: justify;
-  margin-bottom: 2%;
-  margin-top: 5%;
+  margin-bottom: 1%;
+  margin-top: 2%;
 }
 
 .about-text {
   color: #007e40;
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-align: justify;
 }
@@ -332,16 +384,15 @@ body{
 
 .navbar-brand-about {
   opacity: .7;
-  margin: 5%;
-  width: 160px;
-  height: 80px;
+  margin: 1%;
+  width: 120px;
+  height: 60px;
   position: relative;
   display: inline-block;
   float: right;
   left: 60%;
-  border-radius: 10%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 10px;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -355,7 +406,7 @@ body{
   padding: 10px;
 
   background: #ffcb0d;
-  color: #0b4824;
+  color: #1e68ff;
   box-shadow: 5px 20px 30px #aeffdf,
               inset 0px 3px 3px hsla(180, 100%, 50%, 0.9);
 }

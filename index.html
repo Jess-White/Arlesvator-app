@@ -19,16 +19,16 @@
 
           <span class="col-sm-4">
           <div class="row header-buttons">
-            <a class="row navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i class="fa fa-2x fa-github-square" aria-hidden="true"></i></a>
+            <a class="row navbar-brand-top" href="https://github.com/Jess-White/elevator-react-app"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
           </div>
           <div class="row header-buttons">
-            <a class="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
+            <a class="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
           </div>
           <div id="aboutSection" class="row header-buttons">
-          <div onClick="showAbout()" style={customStyles} trigger="button" class="navbar-brand-top"><h1>About</h1>
+          <div onClick="showAbout()" style={customStyles} trigger="button" class="navbar-brand-top"><h1>about</h1>
           </div>
+          <p class="top-body-text">A Van Gogh-Themed Virtual Elevator App</p>
           </div>
-          <p class="top-body-text">A Van Gogh-Themed Virtual Elevator</p>
           <!-- <div class="row header-buttons">
             <a class="navbar-brand-top" href=""><h1>raw</h1></a>
           </div> -->
@@ -43,29 +43,31 @@
     <div id="elevator-element"> 
 
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-1">
         </div>
         <div class="col-sm-9">
-              <span class="slidyBar">
-                <span class="slidy-holder-panel">
-                  <span class="slidy-holder">
-                  <span id="slidy-basement" class="navbar-brand-slidy">B</span>
-                  <span id="slidy-lobby" class="navbar-brand-slidy">L</span>
-                  <span id="1" class="navbar-brand-slidy">1</span>
-                  <span id="2" class="navbar-brand-slidy">2</span>
-                  <span id="3" class="navbar-brand-slidy">3</span>
-                  <span id="4" class="navbar-brand-slidy">4</span>
-                  <span id="5" class="navbar-brand-slidy">5</span>
-                  <span id="6" class="navbar-brand-slidy">6</span>
-                  <span id="7" class="navbar-brand-slidy">7</span>
-                  <span id="8" class="navbar-brand-slidy">8</span>
-                  <span id="9" class="navbar-brand-slidy">9</span>
-                  <span id="10" class="navbar-brand-slidy">10</span>
-                  <span id="slidy-penthouse" class="navbar-brand-slidy">P</span>
-                  <span id="slidy-rooftop" class="navbar-brand-slidy">R</span>
-                  </span>
-                </span>
-              </span>
+              <div class="slidyBar">
+                <div class="slidy-holder-panel">
+                  <div class="slidy-holder">
+                  <div id="slidy-basement" class="navbar-brand-slidy">B</div>
+                  <div id="slidy-lobby" class="navbar-brand-slidy">L</div>
+                  <div id="1" class="navbar-brand-slidy">1</div>
+                  <div id="2" class="navbar-brand-slidy">2</div>
+                  <div id="3" class="navbar-brand-slidy">3</div>
+                  <div id="4" class="navbar-brand-slidy">4</div>
+                  <div id="5" class="navbar-brand-slidy">5</div>
+                  <div id="6" class="navbar-brand-slidy">6</div>
+                  <div id="7" class="navbar-brand-slidy">7</div>
+                  <div id="8" class="navbar-brand-slidy">8</div>
+                  <div id="9" class="navbar-brand-slidy">9</div>
+                  <div id="10" class="navbar-brand-slidy">10</div>
+                  <div id="slidy-penthouse" class="navbar-brand-slidy">P</div>
+                  <div id="slidy-rooftop" class="navbar-brand-slidy">R</div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-2">
           </div>
 
       <div>
@@ -95,6 +97,8 @@
 
                           <nav-link onClick="changeFloor('B')" class="navbar-brand">B</nav-link>
                           <nav-link onClick="changeFloor('L')" class="navbar-brand">L</nav-link>
+
+                          <span id="Details" class="navbar-brand-details">Details</span>
                        </div>
                   </nav>
                 </div>
@@ -117,7 +121,7 @@
               
               <div class="about-header">
               About This App</div>
-              <div onClick="closeAbout()" style={customStyles} trigger="button" class="navbar-brand-about"><h1>Close</h1>
+              <div onClick="closeAbout()" style={customStyles} trigger="button" class="navbar-brand-about"><h1>close</h1>
               </div>
               <div class="about-text">
                 This app is a variation on my last portfolio project, Ascension, which was conceived as an answer to the "Virtual Elevator" technical interview problem. Ascension was a React app that pulled in data from NASA's Astronomy Photo of the Day API. I wanted to practice transferring my React knowledge base back into Javascript, so I decided to build a second Virtual Elevator in "Vanilla" JS. Arlesvator is the result. The first version of the project was completed in a weekend. I'm hoping to add more functionality over time, including some animations to create a more realistic "elevator" and more information about the inspiration. 

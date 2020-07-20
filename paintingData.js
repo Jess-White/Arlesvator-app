@@ -1,77 +1,77 @@
 // Paintings data:
 
-const paintingArray = [
-  {
-    id: 1,
-    title: "Sunset at Montmajour",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sunset_at_Montmajour_1888_Van_Gogh.jpg/2560px-Sunset_at_Montmajour_1888_Van_Gogh.jpg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 2,
-    title: "The Red Vineyard",
-    url: "https://upload.wikimedia.org/wikipedia/commons/3/35/Red_vineyards.jpg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 3,
-    title: "Meadow with Flowers Under a Stormy Sky",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Van_Gogh_-_Wiese_mit_Blumen_unter_Gewitterhimmel.jpeg/2560px-Van_Gogh_-_Wiese_mit_Blumen_unter_Gewitterhimmel.jpeg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 4,
-    title: "The Large Plane Trees",
-    url: "https://cdn.britannica.com/92/215592-050-8DEB0E28/Large-Plane-Trees-Road-Menders-at-Saint-Remy-Vincent-Van-Gough-1889-Cleveland-Art-Museum.jpg",
-    year: "1889",
-    description: ""
-  },
-  {
-    id: 5,
-    title: "Landscape from Saint-Remy",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vincent_van_Gogh_-_Landscape_from_Saint-R%C3%A9my_-_Google_Art_Project.jpg/1529px-Vincent_van_Gogh_-_Landscape_from_Saint-R%C3%A9my_-_Google_Art_Project.jpg",
-    year: "1889",
-    description: ""
-  },
-  {
-    id: 6,
-    title: "View of Arles, Flowering Orchards",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vincent_Van_Gogh_0018.jpg/1531px-Vincent_Van_Gogh_0018.jpg",
-    year: "1889",
-    description: ""
-  },
-  {
-    id: 7,
-    title: "The Langlois Bridge at Arles with Women Washing",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg/2560px-Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 8,
-    title: "The Poet's Garden",
-    url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Vincent_van_Gogh%E2%80%99s_famous_painting%2C_digitally_enhanced_by_rawpixel-com_51.jpg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 9,
-    title: "Field with Poppies",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Veld_met_klaprozen_-_s0033V1962_-_Van_Gogh_Museum.jpg/2560px-Veld_met_klaprozen_-_s0033V1962_-_Van_Gogh_Museum.jpg",
-    year: "1888",
-    description: ""
-  },
-  {
-    id: 10,
-    title: "Falling Autumn Leaves",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg/2560px-Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg",
-    year: "1888",
-    description: ""
-  }
-]
+// const paintingArray = [
+//   {
+//     id: 1,
+//     title: "Sunset at Montmajour",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sunset_at_Montmajour_1888_Van_Gogh.jpg/2560px-Sunset_at_Montmajour_1888_Van_Gogh.jpg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 2,
+//     title: "The Red Vineyard",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/3/35/Red_vineyards.jpg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 3,
+//     title: "Meadow with Flowers Under a Stormy Sky",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Van_Gogh_-_Wiese_mit_Blumen_unter_Gewitterhimmel.jpeg/2560px-Van_Gogh_-_Wiese_mit_Blumen_unter_Gewitterhimmel.jpeg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 4,
+//     title: "The Large Plane Trees",
+//     url: "https://cdn.britannica.com/92/215592-050-8DEB0E28/Large-Plane-Trees-Road-Menders-at-Saint-Remy-Vincent-Van-Gough-1889-Cleveland-Art-Museum.jpg",
+//     year: "1889",
+//     description: ""
+//   },
+//   {
+//     id: 5,
+//     title: "Landscape from Saint-Remy",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Vincent_van_Gogh_-_Landscape_from_Saint-R%C3%A9my_-_Google_Art_Project.jpg/1529px-Vincent_van_Gogh_-_Landscape_from_Saint-R%C3%A9my_-_Google_Art_Project.jpg",
+//     year: "1889",
+//     description: ""
+//   },
+//   {
+//     id: 6,
+//     title: "View of Arles, Flowering Orchards",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vincent_Van_Gogh_0018.jpg/1531px-Vincent_Van_Gogh_0018.jpg",
+//     year: "1889",
+//     description: ""
+//   },
+//   {
+//     id: 7,
+//     title: "The Langlois Bridge at Arles with Women Washing",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg/2560px-Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 8,
+//     title: "The Poet's Garden",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Vincent_van_Gogh%E2%80%99s_famous_painting%2C_digitally_enhanced_by_rawpixel-com_51.jpg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 9,
+//     title: "Field with Poppies",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Veld_met_klaprozen_-_s0033V1962_-_Van_Gogh_Museum.jpg/2560px-Veld_met_klaprozen_-_s0033V1962_-_Van_Gogh_Museum.jpg",
+//     year: "1888",
+//     description: ""
+//   },
+//   {
+//     id: 10,
+//     title: "Falling Autumn Leaves",
+//     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg/2560px-Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg",
+//     year: "1888",
+//     description: ""
+//   }
+// ]
 
 var url = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/2560px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg"
   let currentPainting = document.getElementById("background-painting");
@@ -91,7 +91,7 @@ function changeFloor(floor) {
     document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
     document.getElementById('slidy-basement').classList.add('indicate-floor')
   } else if (floor === "L") {
-    var url = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg/1920px-Van_Gogh_-_Terrasse_des_Caf%C3%A9s_an_der_Place_du_Forum_in_Arles_am_Abend1.jpeg"
+    var url = "https://upload.wikimedia.org/wikipedia/commons/5/5b/Vincent_van_Gogh_-_The_white_orchard_-_Google_Art_Project.jpg"
     document.querySelectorAll('.navbar-brand-slidy').forEach(el => el.classList.remove('indicate-floor'))
     document.getElementById('slidy-lobby').classList.add('indicate-floor') 
   }  

@@ -17,16 +17,16 @@ const imageArray = [
   },
   {
     id: 3,
-    title: "A Wheatfield, with Cypresses",
-    url: "https://cdn.britannica.com/s:1500x700,q:85/70/970-004-3DCDD429/Wheatfield-oil-canvas-Cypresses-Vincent-van-Gogh-1889.jpg",
-    year: "1889",
+    title: "View of Arles with Iries in the Foreground",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Vincent_van_Gogh_-_Veld_met_bloemen_bij_Arles_-_Google_Art_Project.jpg/2560px-Vincent_van_Gogh_-_Veld_met_bloemen_bij_Arles_-_Google_Art_Project.jpg",
+    year: "1888",
     description: ""
   },
-  {
+   {
     id: 4,
-    title: "The Large Plane Trees",
-    url: "https://cdn.britannica.com/92/215592-050-8DEB0E28/Large-Plane-Trees-Road-Menders-at-Saint-Remy-Vincent-Van-Gough-1889-Cleveland-Art-Museum.jpg",
-    year: "1889",
+    title: "The Langlois Bridge at Arles with Women Washing",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg/2560px-Van_Gogh_-Die_Br%C3%BCcke_von_Langlois_in_Arles_mit_W%C3%A4scherinnen.jpeg",
+    year: "1888",
     description: ""
   },
   {
@@ -45,9 +45,9 @@ const imageArray = [
   },
   {
     id: 7,
-    title: "Olive Trees",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Van_Gogh_The_Olive_Trees..jpg/2560px-Van_Gogh_The_Olive_Trees..jpg",
-    year: "1889",
+    title: "Summer Evening in Arles",
+    url: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Van_Gogh_-_Weizenfeld_bei_Sonnenuntergang.jpeg",
+    year: "1888",
     description: ""
   },
   {
@@ -66,9 +66,9 @@ const imageArray = [
   },
   {
     id: 10,
-    title: "Falling Autumn Leaves",
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg/2560px-Van_Gogh_-_Les_Alyscamps%2C_fallende_Bl%C3%A4tter.jpeg",
-    year: "1888",
+    title: "Evening Landscape with Rising Moon",
+    url: "https://www.vincentvangogh.org/images/paintings/evening-landscape-with-rising-moon.jpg",
+    year: "1889",
     description: ""
   },
   {
