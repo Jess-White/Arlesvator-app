@@ -214,9 +214,9 @@ body{
 .navbar-brand-top:hover {
   text-decoration: none;
 
-  color: #14ffa1;
-  background: #168a45;
-  box-shadow: 5px 20px 30px #14ffa1, inset 5px 5px 5px 3px #0b4824;
+  color: #83d6ff;
+  background: #2c03ff;
+  box-shadow: 5px 20px 30px #002080, inset 5px 5px 5px 3px #002080;
 }
 
 .navbar-brand-slidy {
