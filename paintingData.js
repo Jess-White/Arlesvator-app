@@ -39,14 +39,14 @@ const imageArray = [
     title: "View of Arles, Flowering Orchards",
     url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vincent_Van_Gogh_0018.jpg/1531px-Vincent_Van_Gogh_0018.jpg",
     year: "1889",
-    description: "Oil on canvas, 72 cm × 92 cm (28.3 in × 36.2 in), "
+    description: "Oil on canvas, 72 cm × 92 cm (28.3 in × 36.2 in). View of Arles, Flowering Orchards is a painting by Vincent van Gogh, executed in spring 1889, one of several paintings he produced in his Flowering Orchards series while living in Arles. It supplies a view across a canal and the poplars on its board towards the historical center of Arles, with the towers of Saint-Trophime and College St Charles to the left, contrasted by recent building of the Caserne Calvin, housing the Zouave Regiment, to the right. Van Gogh was acquainted with several of the Zouave officers, painted one in native uniform, and his portrait of Lieutenant Milliet is known as The Lover. Poplar trees still stand along the canal, today, but the orchards and the Caserne are gone."
   },
   {
     id: 7,
     title: "Summer Evening in Arles",
     url: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Van_Gogh_-_Weizenfeld_bei_Sonnenuntergang.jpeg",
     year: "1888",
-    description: "View of Arles, Flowering Orchards is a painting by Vincent van Gogh, executed in spring 1889, one of several paintings he produced in his Flowering Orchards series while living in Arles. It supplies a view across a canal and the poplars on its board towards the historical center of Arles, with the towers of Saint-Trophime and College St Charles to the left, contrasted by recent building of the Caserne Calvin, housing the Zouave Regiment, to the right. Van Gogh was acquainted with several of the Zouave officers, painted one in native uniform, and his portrait of Lieutenant Milliet is known as The Lover. Poplar trees still stand along the canal, today, but the orchards and the Caserne are gone."
+    description: "Oil on canvas, 74 × 91 cm.'There are many repetitions of yellow in the earth, neutral tones, resulting from the mixing of violet with yellow, but I could hardly give a damn about the veracity of the colour. Better to make naive almanac pictures — old country almanacs, where hail, snow, rain, fine weather are represented in an utterly primitive way. The way Anquetin got his Harvest so well. I don’t hide from you that I don’t detest the countryside — having been brought up there, snatches of memories from past times, yearnings for that infinite of which the Sower, the sheaf, are the symbols, still enchant me as before. But when will I do the starry sky, then, that painting that’s always on my mind? Alas, alas, it’s just as our excellent pal Cyprien says, in ‘En ménage’ by J. K. Huysmans: the most beautiful paintings are those one dreams of while smoking a pipe in one’s bed, but which one doesn’t make.6 But it’s a matter of attacking them nevertheless, however incompetent one may feel vis-à-vis the ineffable perfections of nature’s glorious splendours.' - Vincent van Gogh in a letter to Emile Bernard, Arles, on or about Tuesday, 19 June 1888."
   },
   {
     id: 8,

@@ -5,12 +5,16 @@ let description = "Oil on canvas, 72 cm × 90 cm (28.3 in × 35.4 in). Bedroom i
 
 let currentPainting = document.getElementById("background-painting");
 currentPainting.style.backgroundImage = `url("${url}")`;
+
 let detailPainting = document.getElementById("modal-painting");
 detailPainting.style.backgroundImage = `url("${url}")`;
+
 let detailTitle = document.getElementById("modal-title");
 document.getElementById('modal-title').innerHTML=title
+
 let detailYear = document.getElementById("modal-year");
 document.getElementById('modal-year').innerHTML=year;
+
 let detailDescription = document.getElementById("modal-description");
 document.getElementById('modal-description').innerHTML=description;
 
