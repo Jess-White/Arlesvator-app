@@ -14,121 +14,122 @@
         
         <div class="row">
           <div class="col-sm-8">
-          <img class="logo-image" src="Arles_logo2.png" />
+            <img class="logo-image" src="Arles_logo2.png" />
           </div>
 
           <span class="col-sm-4">
-          <div class="row header-buttons">
-            <a class="row navbar-brand-top" href="https://github.com/Jess-White/Arlesvator-app"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
-          </div>
-          <div class="row header-buttons">
-            <a class="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
-          </div>
-          <div id="aboutSection" class="row header-buttons">
-          <div onClick="showAbout()" style={customStyles} trigger="button" class="navbar-brand-top"><h1>about</h1>
-          </div>
-          <p class="top-body-text">A Van Gogh-Themed Virtual Elevator App</p>
-          </div>
+            <div class="row header-buttons">
+              <a class="row navbar-brand-top" href="https://github.com/Jess-White/Arlesvator-app"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
+            </div>
+            <div class="row header-buttons">
+              <a class="navbar-brand-top" href="https://www.linkedin.com/in/jess-white-chicago/"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <div id="aboutSection" class="row header-buttons">
+              <div onClick="showAbout()" style={customStyles} trigger="button" class="navbar-brand-top">
+                <h1>about</h1>
+              </div>
+              <p class="top-body-text">A Van Gogh-Themed Virtual Elevator App</p>
+            </div>
           </span>
         </div>
       </div>
       
       <!-- Elevator element needs to start here -->
     <div id="modal-hide-element">
-    <div id="elevator-element" class="modal-hide-element"> 
+    <div id="elevator-element"> 
 
       <div class="row">
         <div class="col-sm-1">
         </div>
         <div class="col-sm-9">
-              <div class="slidyBar">
-                <div class="slidy-holder-panel">
-                  <div class="slidy-holder">
-                  <div id="slidy-basement" class="navbar-brand-slidy">B</div>
-                  <div id="slidy-lobby" class="navbar-brand-slidy">L</div>
-                  <div id="1" class="navbar-brand-slidy">1</div>
-                  <div id="2" class="navbar-brand-slidy">2</div>
-                  <div id="3" class="navbar-brand-slidy">3</div>
-                  <div id="4" class="navbar-brand-slidy">4</div>
-                  <div id="5" class="navbar-brand-slidy">5</div>
-                  <div id="6" class="navbar-brand-slidy">6</div>
-                  <div id="7" class="navbar-brand-slidy">7</div>
-                  <div id="8" class="navbar-brand-slidy">8</div>
-                  <div id="9" class="navbar-brand-slidy">9</div>
-                  <div id="10" class="navbar-brand-slidy">10</div>
-                  <div id="slidy-penthouse" class="navbar-brand-slidy">P</div>
-                  <div id="slidy-rooftop" class="navbar-brand-slidy">R</div>
-                  </div>
-                </div>
+          <div class="slidyBar">
+            <div class="slidy-holder-panel">
+              <div class="slidy-holder">
+                <div id="slidy-basement" class="navbar-brand-slidy">B</div>
+                <div id="slidy-lobby" class="navbar-brand-slidy">L</div>
+                <div id="1" class="navbar-brand-slidy">1</div>
+                <div id="2" class="navbar-brand-slidy">2</div>
+                <div id="3" class="navbar-brand-slidy">3</div>
+                <div id="4" class="navbar-brand-slidy">4</div>
+                <div id="5" class="navbar-brand-slidy">5</div>
+                <div id="6" class="navbar-brand-slidy">6</div>
+                <div id="7" class="navbar-brand-slidy">7</div>
+                <div id="8" class="navbar-brand-slidy">8</div>
+                <div id="9" class="navbar-brand-slidy">9</div>
+                <div id="10" class="navbar-brand-slidy">10</div>
+                <div id="slidy-penthouse" class="navbar-brand-slidy">P</div>
+                <div id="slidy-rooftop" class="navbar-brand-slidy">R</div>
               </div>
+              </div>
+            </div>
           </div>
           <div class="col-sm-2">
           </div>
 
-      <div>
+        <div>
     <!-- "Elevator Door" component -->
           <div class="row elevator-door"> 
-              <div class="col-sm-9">
-                <div class="row">
-                  <div class="sliding-doors" id="background-painting"></div>
-                
-                <div class="nav-bar col-sm-3">
-                  <nav class="vertical-nav">
-                       <div> 
-                          <nav-link onClick="pressButton('P')" class="navbar-brand">P</nav-link>
-                          <nav-link onClick="pressButton('R')" class="navbar-brand">R</nav-link>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="sliding-doors" id="background-painting"></div>
+              
+              <div class="nav-bar col-sm-3">
+                <nav class="vertical-nav">
+                     <div> 
+                        <nav-link onClick="pressButton('P')" class="navbar-brand">P</nav-link>
+                        <nav-link onClick="pressButton('R')" class="navbar-brand">R</nav-link>
 
-                          <nav-link onClick="pressButton(9)" class="navbar-brand">9</nav-link>
-                          <nav-link onClick="pressButton(10)" class="navbar-brand">10</nav-link>
-                          <nav-link onClick="pressButton(7)" class="navbar-brand">7</nav-link>
-                          <nav-link onClick="pressButton(8)" class="navbar-brand">8</nav-link>
-                          <nav-link onClick="pressButton(5)" class="navbar-brand">5</nav-link>
-                          <nav-link onClick="pressButton(6)" class="navbar-brand">6</nav-link>
-                          <nav-link onClick="pressButton(3)" class="navbar-brand">3</nav-link>
-                          <nav-link onClick="pressButton(4)" class="navbar-brand">4</nav-link>
-                          <nav-link onClick="pressButton(1)" class="navbar-brand">1</nav-link>
-                          <nav-link onClick="pressButton(2)" class="navbar-brand">2</nav-link>
+                        <nav-link onClick="pressButton(9)" class="navbar-brand">9</nav-link>
+                        <nav-link onClick="pressButton(10)" class="navbar-brand">10</nav-link>
+                        <nav-link onClick="pressButton(7)" class="navbar-brand">7</nav-link>
+                        <nav-link onClick="pressButton(8)" class="navbar-brand">8</nav-link>
+                        <nav-link onClick="pressButton(5)" class="navbar-brand">5</nav-link>
+                        <nav-link onClick="pressButton(6)" class="navbar-brand">6</nav-link>
+                        <nav-link onClick="pressButton(3)" class="navbar-brand">3</nav-link>
+                        <nav-link onClick="pressButton(4)" class="navbar-brand">4</nav-link>
+                        <nav-link onClick="pressButton(1)" class="navbar-brand">1</nav-link>
+                        <nav-link onClick="pressButton(2)" class="navbar-brand">2</nav-link>
 
 
-                          <nav-link onClick="pressButton('B')" class="navbar-brand">B</nav-link>
-                          <nav-link onClick="pressButton('L')" class="navbar-brand">L</nav-link>
+                        <nav-link onClick="pressButton('B')" class="navbar-brand">B</nav-link>
+                        <nav-link onClick="pressButton('L')" class="navbar-brand">L</nav-link>
 
-                          <span onClick="openDoors()" class="navbar-brand"><|></span>
+                        <span onClick="openDoors()" class="navbar-brand"><|></span>
 
-                          <span onClick="closeDoors()" class="navbar-brand">>|<</span>
+                        <span onClick="closeDoors()" class="navbar-brand">>|<</span>
 
-                          <span id="detailsButton" class="navbar-brand-details">Details</span>
-                       </div>
-                  </nav>
-                </div>
-
+                        <span id="detailsButton" class="navbar-brand-details">Details</span>
+                     </div>
+                </nav>
               </div>
+
+            </div>
           </div>
 
         </div>
+      </div>
     </div>
-  </div>
   </div>
     
     <!-- Details Modal Element -->
     <div class="modal" id="detailsModal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="row modal-header-text"> 
-        <p id="modal-title" class="col-sm-9"></p>
-        <p id="modal-year" class="col-sm-3"></p>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row modal-header-text"> 
+            <p id="modal-title" class="col-sm-9"></p>
+            <p id="modal-year" class="col-sm-3"></p>
+          </div>
+          <span class="close">close</span>
         </div>
-        <span class="close">close</span>
-      </div>
-      <div class="modal-body modal-text row">
-        <div class="col-sm-6">
-          <p id="modal-description"></p>
+        <div class="modal-body modal-text row">
+          <div class="col-sm-6">
+            <p id="modal-description"></p>
+          </div>
+          <div class="col-sm-6 modal-image" id="modal-painting"></div>
         </div>
-        <div class="col-sm-6 modal-image" id="modal-painting"></div>
+        <div class="modal-footer">
+        </div>
       </div>
-      <div class="modal-footer">
-      </div>
-    </div>
     </div>
 
     </div>
@@ -159,7 +160,7 @@
               <div class="about-header">
               </div>
             </div>
-            </div>
+          </div>
           <div class="col-sm-1">
           </div>
           </div>
